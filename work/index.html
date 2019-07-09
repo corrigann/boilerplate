@@ -1,0 +1,105 @@
+<?php
+if($_POST["message"]) {
+    mail("cori0203@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+    <section class="ribbon">
+      <div>
+        <p>Looking to work with me? Say hi</p>
+      </div>
+    </section>
+    <section class="nav-section">
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="https://www.corriganscollective.com "target="_blank" style="text-decoration:none">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>        
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+  <section class="intro">
+    <div class="welcome">
+      <h3>Welcome to the studio of</h3>
+      <h1>Corrigan Tyrrell</h1>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="work-container">
+      <div class="work-items">
+        <div class="container">
+          <img src="../img/dewberry.jpg" id="dewberry" alt="interiors-photo"class="image">
+          <div class="middle">
+            <div class="text">photography</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="../img/dewberry.jpg" id="dewberry" alt="interiors-photo"class="image">
+          <div class="middle">
+            <div class="text">branding</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-items">
+        <div class="container">
+        <img src="../img/amanda.png" id="dewberry" alt="interiors-photo" class="image">
+          <div class="middle">
+            <div class="text">branding</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
