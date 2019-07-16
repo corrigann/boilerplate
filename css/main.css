@@ -113,12 +113,22 @@ header .ribbon {
   width: 100%;
 }
 
+header .ribbon p a, a:visited, a:unvisited, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+header .ribbon a:hover {
+  color: white;
+}
+
 .ribbon p {
   font-size: .8em;
   font-family: 'Open+Sans', sans-serif, italic;
   font-style: italic;
   letter-spacing: 2px;
   font-weight: lighter;
+  color: black;
 }
 
 header .nav-section {
@@ -523,6 +533,12 @@ address .contact {
   width: 60px;
   height: 30px;
 }
+
+section .new-form {
+  font-family: 'Open+Sans', sans-serif, italic;
+}
+
+
 
 /*****WORK*****/
 
