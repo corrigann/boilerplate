@@ -1,7 +1,3 @@
-<?php
-$action=$_REQUEST['action'];
-if ($action=="") 
-
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -43,7 +39,7 @@ if ($action=="")
             <li><a href="http://corrigantyrrell.com/index.html">Home</a></li>
             <li><a href="http://corrigantyrrell.com/work/index.html">Work</a></li>
             <li><a href="https://www.corriganscollective.com "target="_blank" style="text-decoration:none">Blog</a></li>
-            <li><a href="http://corrigantyrrell.com/contact/index.html">Contact</a></li>        
+            <li><a href="http://corrigantyrrell.com/contact/index.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -57,7 +53,7 @@ if ($action=="")
     </div>
   </section>
 
-  
+
 
   <section class="contact-page">
     <div class="contact-wrapper">
@@ -81,9 +77,9 @@ if ($action=="")
     </div>
     <div class="contact-form">
       <div class="contact-box">
-        <form method="post" action="contact.php">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbwYtXU0PtvXSJmMAfru_-JO-whu7ERVAjcEx-meIeiCvGcAl-41/exec" id="gform">
           <label>Name:</label>
-          <input name id="sender">
+          <input name="sender">
 
           <label>Email address:</label>
           <input name="senderEmail">
@@ -94,7 +90,9 @@ if ($action=="")
           <label>How can I help?</label>
           <textarea rows="15" cols="20" name="message"></textarea>
 
-          <div class="submit-button"><button type="submit">send</button></div>
+          <div class="submit-button">
+            <button type="submit">send</button>
+          </div>
         </form>
       </div>
     </div>
@@ -131,12 +129,6 @@ if ($action=="")
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
