@@ -100,6 +100,8 @@ textarea {
 body {
   background: #f8f7f2;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*****HEADER*****/
 
@@ -113,13 +115,12 @@ header .ribbon {
   width: 100%;
 }
 
-header .ribbon p a, a:visited, a:unvisited, a:active {
-  color: black;
-  text-decoration: none;
-}
-
 header .ribbon a:hover {
   color: white;
+}
+
+header .ribbon p a, a:visited, a:unvisited, a:active {
+  color: black;
 }
 
 .ribbon p {
@@ -138,7 +139,6 @@ header .nav-section {
 
 header .nav-section nav {
   text-align: center;
-
 }
 
 header .nav-section nav ul {
@@ -413,6 +413,10 @@ address .contact {
   width: 100%;
 }
 
+.contact .contact-menu a:hover {
+    color: white;
+}
+
 .contact .contact-menu .prompts {
   display: flex;
   flex-direction: column-reverse;
@@ -626,8 +630,8 @@ section .work {
   }
 
   .about .leaf-icon img {
-    width: 55px;
-    height: 40px;
+    width: 40px;
+    height: 25px;
   }  
 
   .services div.container-wrapper .container {
@@ -643,17 +647,12 @@ section .work {
   }
 
   .services .container-wrapper .container .services-box {
-    height: auto;
+    height: 500px;
     min-width: 200px;
     background: #dcdbcb;
     margin: 30px;
     flex-direction: column;
     box-shadow: 15px 30px 15px rgba(0,0,0.05,0.05);
-  }
-
-  .services .container-wrapper .container .services-box {
-    height: 425px;
-    width: auto;
   }
 
   .contact .contact-menu {
@@ -719,12 +718,12 @@ section .work {
   .work .work-container .work-items {
     flex-flow: row wrap;
     max-width: 40%;
-    padding: 5px 5px 5px 5px;
+    padding: 50px 5px 5px 5px;
   }
 
 
   .work .work-items img {
-    padding: 5px 5px 5px 5px;
+    padding: 10px;
     vertical-align: middle;
     width: 100%;
   }
@@ -732,12 +731,7 @@ section .work {
   .work .work-items {
     position: relative;
     width: 100%;
-  }
-
-  .work .work-items img {
-    padding: 5px 5px 5px 5px;
-    vertical-align: middle;
-    width: 100%;
+    margin: 5px 2.5px 5px 2.5px;
   }
 
   .work .container {
@@ -801,8 +795,8 @@ section .work {
   }
 
   .services .container-wrapper .container .services-box {
-    height: 400px;
-    min-width: 285px;
+    height: 420px;
+    width: 315px;
     margin: 25px;
   }
 
@@ -893,7 +887,6 @@ section .work {
     padding-top: 50px;
     justify-content: center;
     text-align: center;
-    padding: 50px 5px 5px 5px;
   }
 
   .work .work-container {
@@ -903,13 +896,11 @@ section .work {
   .work .work-container .work-items {
     flex-flow: row wrap;
     flex: 40%;
-    max-width: 40%;
-    padding: 5px 5px 5px 5px;
-    max-width: 400px;
+    max-width: 40%;;
+    max-width: 450px;
   }
 
   .work .work-items img {
-    padding: 5px 5px 5px 5px;
     vertical-align: middle;
     width: 100%;
   }
