@@ -203,6 +203,7 @@ section .intro {
   text-transform: uppercase;
   letter-spacing: 18px;
   margin: 0px 0px 0px 0px;
+  padding-left: 10px;
 }
 
 .intro .intro-paragraphs {
@@ -231,23 +232,31 @@ section .intro {
   display: none;
 }
 
-.intro .portfolio-preview {
+.intro .portfolio-preview .pic-container {
   display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .intro .portfolio-preview #dewberry {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  max-width: 800px;
-  align-items: center;
+  flex-direction: column;
  } 
 
 .intro .portfolio-preview #dewberry img {
-  text-align: center;
 }
+
+.intro .portfolio-preview p {
+  font-family: 'Open+Sans', sans-serif;
+  font-size: .5em;
+  letter-spacing: 2.7px;
+  font-weight: lighter;
+  line-height: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
 
 /*****ABOUT*****/
 
@@ -538,6 +547,36 @@ address .contact {
   height: 30px;
 }
 
+.contact-page .contact-box .redirect-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-page .contact-box .redirect-message h4{
+  text-align: center;
+  font-family: 'Open+Sans', sans-serif, italic;
+  font-style: italic;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.contact-page .contact-box .redirect-message p {
+  text-align: center;
+  font-family: 'Open+Sans', sans-serif, italic;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 1em;
+  text-transform: lowercase;
+  color: #6d6c64;
+  display: none;
+}
+
 section .new-form {
   font-family: 'Open+Sans', sans-serif, italic;
 }
@@ -622,6 +661,33 @@ section .work {
     font-weight: lighter;
     letter-spacing: 2px;
     padding: 10px;
+  }
+
+  .intro {
+  }
+
+  .intro .portfolio-preview  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .intro .pic-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+  }
+
+  .intro .portfolio-preview .pic-container img {
+    justify-content: center;
+  }
+
+  .intro .portfolio-preview .pic-container p {
+    text-align: right;
   }
 
   .about div p {
@@ -896,7 +962,7 @@ section .work {
   .work .work-container .work-items {
     flex-flow: row wrap;
     flex: 40%;
-    max-width: 40%;;
+    max-width: 40%;
     max-width: 450px;
   }
 
