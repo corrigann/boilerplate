@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 85bf0293539676ac974e6e9bd8be1cb8a5578297
 (function() {
 
   function validateHuman(honeypot) {
