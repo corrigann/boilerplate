@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 (function() {
 
   function validateHuman(honeypot) {
